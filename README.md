@@ -3,19 +3,39 @@
 Process Benchmarking Tool.
 
 - [ProcBench](#procbench)
-  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+    - [As a Tool](#as-a-tool)
+    - [For Development](#for-development)
   - [Usage](#usage)
     - [Prepare your Test Cases](#prepare-your-test-cases)
     - [Run the Test Cases](#run-the-test-cases)
     - [Export HTML Report](#export-html-report)
 
-## Prerequisites
+## Setup
+
+### As a Tool
+
+Get ready:
+
+- Python 3.12+
+
+then:
+
+```sh
+pip install procbench
+```
+
+**NOTE:** For the Usage below, just replace
+`uv run -m procbench ...` with `procbench ...`.
+
+### For Development
+
+Get ready:
 
 - Python 3.12+
 - `uv`, the Python package manager.
 
-## Setup
+then:
 
 ```sh
 cd <project_root>
