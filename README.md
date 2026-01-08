@@ -2,6 +2,14 @@
 
 Process Benchmarking Tool.
 
+- [ProcBench](#procbench)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Usage](#usage)
+    - [Prepare your Test Cases](#prepare-your-test-cases)
+    - [Run the Test Cases](#run-the-test-cases)
+    - [Export HTML Report](#export-html-report)
+
 ## Prerequisites
 
 - Python 3.12+
@@ -38,3 +46,17 @@ For verbose debug output, add `-v` flag:
 ```sh
 uv run -m procbench -v -o result.json tc01.json tc02.json tc03.json
 ```
+
+The results JSON file will contain detailed benchmarking results
+and is machine-parseable. See [sample-results.json](./sample-results.json)
+for a grasp of the structure.
+
+### Export HTML Report
+
+```sh
+uv run -m procbench export html result.json report.html
+```
+
+![HTML report 1](docs/images/html-report-1.png)
+
+![HTML report 2](docs/images/html-report-2.png)
