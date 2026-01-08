@@ -1,6 +1,6 @@
 [project]
 name = "procbench"
-version = "0.1.0"
+version = "0.1.1"
 description = "Process Benchmarking Tool"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -11,3 +11,6 @@ dependencies = [
 
 [project.scripts]
 procbench = "procbench.cli:main"
+
+[tool.setuptools.package-data]
+procbench = ["templates/**/*"]

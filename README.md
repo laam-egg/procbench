@@ -25,9 +25,6 @@ then:
 pip install procbench
 ```
 
-**NOTE:** For the Usage below, just replace
-`uv run -m procbench ...` with `procbench ...`.
-
 ### For Development
 
 Get ready:
@@ -42,6 +39,9 @@ cd <project_root>
 uv venv
 uv sync
 ```
+
+**NOTE:** For the Usage below, just replace
+`procbench ...` with `uv run -m procbench ...`.
 
 ## Usage
 
@@ -58,13 +58,13 @@ Suppose we have those three test cases.
 Suppose you want to dump the output to `result.json`, run:
 
 ```sh
-uv run -m procbench -o result.json tc01.json tc02.json tc03.json
+procbench run -o result.json tc01.json tc02.json tc03.json
 ```
 
 For verbose debug output, add `-v` flag:
 
 ```sh
-uv run -m procbench -v -o result.json tc01.json tc02.json tc03.json
+procbench run -v -o result.json tc01.json tc02.json tc03.json
 ```
 
 The results JSON file will contain detailed benchmarking results
@@ -74,9 +74,9 @@ for a grasp of the structure.
 ### Export HTML Report
 
 ```sh
-uv run -m procbench export html result.json report.html
+procbench export html result.json report.html
 ```
 
-![HTML report 1](docs/images/html-report-1.png)
+![(HTML report 1 image)](docs/images/html-report-1.png)
 
-![HTML report 2](docs/images/html-report-2.png)
+![(HTML report 2 image)](docs/images/html-report-2.png)
