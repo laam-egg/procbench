@@ -8,3 +8,6 @@ dependencies = [
     "click>=8.3.1",
     "psutil>=7.2.1",
 ]
+
+[project.scripts]
+procbench = "procbench.cli:main"
